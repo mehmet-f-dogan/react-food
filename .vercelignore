@@ -1,0 +1,6 @@
+screenshots/
+dist/
+.vscode/
+node_modules/
+.env.example
+README.md

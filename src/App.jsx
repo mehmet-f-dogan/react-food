@@ -42,9 +42,7 @@ const App = () => {
     setStable("");
 
     setTimeout(() => {
-      fetch(
-        `${import.meta.env.VITE_API_URL}/recipes?search=${searchQuery}`
-      )
+      fetch(`${import.meta.env.VITE_API_URL}/recipes?search=${searchQuery}`)
         .then((res) => {
           if (!res.ok) throw new Error("Something went wrong!");
           return res.json();

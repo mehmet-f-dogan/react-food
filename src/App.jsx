@@ -14,7 +14,7 @@ const App = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [emptyArray, setEmptyArray] = useState("");
   const [stable, setStable] = useState(
-    "Nothing to show, please search something!"
+    ""
   );
   const [savedItems, setSavedItems] = useState(() => {
     const localData = localStorage.getItem("recipes");
